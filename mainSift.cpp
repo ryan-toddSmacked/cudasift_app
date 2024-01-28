@@ -602,6 +602,8 @@ void generateResults(
     fprintf(fp, "%s\n", "\"Detecting, segmenting and tracking unknown objects using multi-label MRF inference\", CVIU, 118, pp. 111-127, January 2014.");
     fprintf(fp, "<a href=\"%s\">%s</a></p>\n", "http://www.sciencedirect.com/science/article/pii/S107731421300194X", "http://www.sciencedirect.com/science/article/pii/S107731421300194X");
     fprintf(fp, "</body>\n");
+    fprintf(fp, "</html>\n");
+    fclose(fp);
 }
 
 inline std::string Now()
