@@ -12,20 +12,20 @@ This was done strictly to auto-free the memory through c++ destructor. The funct
 All of the functionality that was detected to be unused was removed. This includes the texture code from the CudaImage class. All of the "#if 0" blocks.\
 The last modification was placing the output into a json file. The json file stores the following.\
 ```json
-{\
-    "image1": "path to the first image",\
-    "image2": "path to the second image",\
-    "homography": [\
-        [h[0], h[1], h[2]],\
-        [h[3], h[4], h[5]],\
-        [h[6], h[7], h[8]],\
+{
+    "image1": "path to the first image",
+    "image2": "path to the second image",
+    "homography": [
+        [h[0], h[1], h[2]],
+        [h[3], h[4], h[5]],
+        [h[6], h[7], h[8]],
     ],
-    "original_size1": [width, height],\
-    "original_size2": [width, height],\
-    "final_size1": [width, height],\
-    "final_size2": [width, height],\
-    "elapsed_time": <in seconds>\
-}\
+    "original_size1": [width, height],
+    "original_size2": [width, height],
+    "final_size1": [width, height],
+    "final_size2": [width, height],
+    "elapsed_time": <in seconds>
+}
 ```
 The final sizes are always populated and they indicate if the images needed to be downsampled in the event of memory allocation issues.
     
