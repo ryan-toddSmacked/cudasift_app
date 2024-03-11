@@ -30,4 +30,3 @@ The last modification was placing the output into a json file. The json file sto
 The final sizes are always populated and they indicate if the images needed to be downsampled in the event of memory allocation issues.\
 This example shows that the initial size of the images where *(17911x10078)* pixels, and the application had to downsample, 2 times, before finally finishing the algorithm and producing the homography.\
 I ran compute-sanitizer on those images that are massive, it showed 2 errors which were the *cudaMalloc* failures. It then showed that all allocations where freed, and no memory leaked?
-    
