@@ -16,15 +16,15 @@ The last modification was placing the output into a json file. The json file sto
     "image1": "path to the first image",
     "image2": "path to the second image",
     "homography": [
-		[1.000303745e+00, 2.957944889e-05, -3.326675781e+03],
-		[2.541389222e-05, 1.000007987e+00, -2.913469727e+03],
-		[3.503976842e-08, 1.379766079e-08, 1.000000000e+00]
-	],
-	"original_size1": [17911, 10078],
-	"original_size2": [17911, 10078],
-	"final_size1": [8956, 5039],
-	"final_size2": [8956, 5039],
-	"elapsed_time": 1.875954
+        [1.000303745e+00, 2.957944889e-05, -3.326675781e+03],
+        [2.541389222e-05, 1.000007987e+00, -2.913469727e+03],
+        [3.503976842e-08, 1.379766079e-08, 1.000000000e+00]
+    ],
+    "original_size1": [17911, 10078],
+    "original_size2": [17911, 10078],
+    "final_size1": [8956, 5039],
+    "final_size2": [8956, 5039],
+    "elapsed_time": 1.875954
 }
 ```
 The final sizes are always populated and they indicate if the images needed to be downsampled in the event of memory allocation issues.
