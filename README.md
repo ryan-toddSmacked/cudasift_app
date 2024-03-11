@@ -11,6 +11,7 @@ Another modification was creating a new class that is designed to allocate the t
 This was done strictly to auto-free the memory through c++ destructor. The functionality remains the same.\
 All of the functionality that was detected to be unused was removed. This includes the texture code from the CudaImage class. All of the "#if 0" blocks.\
 The last modification was placing the output into a json file. The json file stores the following.\
+```json
 {\
     "image1": "path to the first image",\
     "image2": "path to the second image",\
@@ -25,5 +26,6 @@ The last modification was placing the output into a json file. The json file sto
     "final_size2": [width, height],\
     "elapsed_time": <in seconds>\
 }\
+```
 The final sizes are always populated and they indicate if the images needed to be downsampled in the event of memory allocation issues.
     
