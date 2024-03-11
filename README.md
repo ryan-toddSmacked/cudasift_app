@@ -10,7 +10,7 @@ This, in theory, should reduce the memory usage of the images on the device by h
 Another modification was creating a new class that is designed to allocate the temporary memory for the laplace buffers when extracting the features.\
 This was done strictly to auto-free the memory through c++ destructor. The functionality remains the same.\
 All of the functionality that was detected to be unused was removed. This includes the texture code from the CudaImage class. All of the "#if 0" blocks.\
-The last modification was placing the output into a json file. The json file stores the following.\
+The last modification was placing the output into a json file. The json file stores the following.
 ```json
 {
     "image1": "path to the first image",
